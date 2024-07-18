@@ -1,0 +1,237 @@
+/* author: https://codepen.io/ksenia-k/pen/vYwgrWv
+Ksenia Kondrashova
+ */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f200ff;
+	height: 210%; /* Pastikan ini tidak membatasi tinggi */
+    overflow-y: auto;
+
+}
+
+.content {
+    min-height: 150vh;
+    width: 100vw;
+    font-family: 'Times New Roman', serif;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00fbff;
+    text-align: center;
+}
+
+.section > div {
+    width: 500%;
+}
+
+@media (max-width: 600px) {
+    .section:nth-child(1) {
+        font-size: 25vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .section:nth-child(1) {
+        font-size: 30px;
+    }
+}
+
+.section:nth-child(2) {
+    font-size: 10vh;
+}
+
+.section:nth-child(3) {
+    font-size: 8vh;
+}
+
+.section:nth-child(2) > div {
+    max-width: 800px
+}
+
+.section:nth-child(3) > div {
+    max-width: 900px
+}
+
+@media (max-width: 750px) {
+    .section:nth-child(2),
+    .section:nth-child(3) {
+        font-size: 9vw;
+    }
+}
+
+.section:nth-child(3) a {
+    padding: 0 .3em;
+}
+
+canvas#neuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: .95;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+a:hover {
+    font-weight: inherit;
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+}
+
+a:active {
+    color: rgb(0, 255, 255);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #151912;
+}
+
+.content {
+    min-height: 150vh;
+    width: 100vw;
+    font-family: 'Times New Roman', serif;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff00aa;
+    text-align: center;
+}
+
+.section > div {
+    width: 90%;
+}
+
+.section:nth-child(1) {
+    font-size: 20vh;
+}
+
+@media (max-width: 600px) {
+    .section:nth-child(1) {
+        font-size: 25vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .section:nth-child(1) {
+        font-size: 30px;
+    }
+}
+
+.section:nth-child(2) {
+    font-size: 5vh;
+}
+
+.section:nth-child(3) {
+    font-size: 5vh;
+    margin-top: 500px; /* Menambahkan jarak di atas */
+    margin-bottom: 50px;
+
+}
+
+.section:nth-child(2) > div {
+    max-width: 800px
+}
+
+.section:nth-child(3) > div {
+    max-width: 800px
+}
+
+@media (max-width: 750px) {
+    .section:nth-child(2),
+    .section:nth-child(3) {
+        font-size: 9vw;
+    }
+}
+
+.section:nth-child(3) a {
+    padding: 0 .3em;
+}
+
+canvas#neuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: .95;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+a:hover {
+    font-weight: inherit;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+a:active {
+    color: rgb(221, 0, 255);
+}
+
+.home-button {
+    background-color: #4CAF50; /* Warna latar belakang */
+    border: none; /* Tanpa border */
+    color: white; /* Warna teks */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Teks rata tengah */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Tampilkan sebagai blok sebaris */
+    font-size: 160px; /* Ukuran font */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Ganti kursor saat hover */
+    border-radius: 12px; /* Sudut melengkung */
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.THANKS-button {
+    background-color: #4CAF50; /* Warna latar belakang */
+    border: none; /* Tanpa border */
+    color: white; /* Warna teks */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Teks rata tengah */
+    text-decoration: none; /* Tanpa garis bawah */
+    display: inline-block; /* Tampilkan sebagai blok sebaris */
+    font-size: 160px; /* Ukuran font */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Ganti kursor saat hover */
+    border-radius: 12px; /* Sudut melengkung */
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.home-button:hover {
+    background-color: #3060c8; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.THANKS-button:hover {
+    background-color: #2838c9; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}

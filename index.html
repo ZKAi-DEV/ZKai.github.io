@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="THE FIGHT.mp4" type="video/mp4">
+        </video>
+        <img src="zkai studio.jpg" alt="Logo" class="video-logo">
+        <div class="nav-buttons">
+            <<button class="nav-btn" onclick="window.location.href='follow';">Follow</button>
+            <button class="nav-btn" onclick="window.location.href='karakter';">Karakter</button>
+            <button class="nav-btn" onclick="window.location.href='About';">About</button>
+            <button class="nav-btn" onclick="window.location.href='support';">Support</button>
+        </div>
+    </div>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <div class="form-holder">
+                <input type="text" class="input" placeholder="Name" />
+                <input type="email" class="input" placeholder="Email" />
+                <input type="password" class="input" placeholder="Password" />
+            </div>
+            <button class="submit-btn" onclick="window.location.href='sign up';">Sign up</button>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <div class="form-holder">
+                    <input type="email" class="input" placeholder="Email" />
+                    <input type="password" class="input" placeholder="Password" />
+                </div>
+                <button class="submit-btn" onclick="window.location.href='login';">Log in</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

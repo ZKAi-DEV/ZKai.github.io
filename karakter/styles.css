@@ -1,0 +1,100 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background-image: url(1.jpg);
+}
+
+.item:nth-child(2) {
+    background-image: url(2.jpg);
+}
+
+.item:nth-child(3) {
+    background-image: url(3.jpg);
+}
+
+.item:nth-child(4) {
+    background-image: url(4.jpg);
+}
+
+.item:nth-child(5) {
+    background-image: url(5.jpg);
+}
+
+.item {
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.8 ease;
+}
+
+.item :hover {
+    flex: 5;
+}
+
+.item.active {
+    flex: 5; /* Membuat item yang aktif lebih besar */
+    transition: flex 0.8s ease; /* Transisi yang halus */
+}
+
+.item button {
+    position: absolute; /* Posisi absolut relatif terhadap item */
+    bottom: 100px; /* Posisi dari bawah */
+    left:100px; /* Posisi dari kiri */
+    padding: 10px 20px; /* Padding untuk membuat tombol lebih besar */
+    background-color: #ff0000; /* Warna latar belakang biru */
+    color: white; /* Warna teks putih */
+    border: none; /* Tidak ada border */
+    border-radius: 5px; /* Sudut yang bulat */
+    cursor: pointer; /* Cursor pointer menunjukkan bisa diklik */
+    transition: background-color 0.3s; /* Transisi warna saat hover */
+}
+
+.item button:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+.item {
+    position: relative; /* Penting untuk positioning button */
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.8s ease;
+}
+
+.item img {
+    width: 30%; /* Atur lebar gambar menjadi penuh sesuai kontainer */
+    height: 450px; /* Atur tinggi gambar agar proporsional */
+    display: 20px; /* Sembunyikan gambar secara default */
+    transition: opacity 0.5s ease; /* Transisi untuk efek memudar */
+    position: absolute; /* Posisi absolut untuk overlay di atas item */
+    top: 10; /* Atur posisi atas */
+    left: 10; /* Atur posisi kiri */
+    opacity: 0; /* Buat gambar transparan saat tidak aktif */
+}
+
+.item img.show {
+    display: block; /* Tampilkan gambar */
+    opacity: 1; /* Buat gambar tidak transparan */
+}
+
+.home-button {
+    position: fixed; /* Gunakan fixed untuk posisi yang tetap pada layar */
+    top: 10px; /* Jarak dari atas */
+    right: 10px; 
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}

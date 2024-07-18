@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi GoPay</title>
+    <link rel="stylesheet" href="server.js">
+</head>
+<body>
+    <form id="payment-form">
+        <button type="submit">Bayar dengan GoPay</button>
+    </form>
+
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const response = await fetch('/create-transaction', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const data = await response.json();
+            window.location.href = data.actions[0].url; // Redirect to GoPay payment page
+        });
+    </script>
+</body>
+</html>
